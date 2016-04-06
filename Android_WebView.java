@@ -19,8 +19,10 @@ public class Frg_Terms extends Fragment {
 
 		initView();
 
-		webView.loadUrl("https://darkdusk.org/vroom/api/viewer.php?key=$YOUR_API_KEY&img=4.jpg");
-
+		webView.loadUrl("https://darkdusk.org/vroom/api/viewer.php?key=/*YOUR API KEY*/&img=/*YOUR IMG PATH*/");
+		webView.loadUrl("https://darkdusk.org/vroom/api/viewer.php?key=/*YOUR API KEY*/&img=/*YOUR IMG PATH*/&mo=AR");
+		webView.loadUrl("https://darkdusk.org/vroom/api/viewer.php?key=/*YOUR API KEY*/&img=/*YOUR IMG PATH*/&mo=VR");
+		
 		return frgView;
 	}
 	
