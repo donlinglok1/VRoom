@@ -33,9 +33,15 @@ public class VRoom extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html");
-
+		
+		//basic mode with server demo image
 		echo(response, httpConnect("https://darkdusk.org/vroom/api/viewer.php?key=/*YOUR API KEY*/&img=/*YOUR IMG PATH*/"));
+		
+		//AR mode, please use mobile device testing
 		echo(response, httpConnect("https://darkdusk.org/vroom/api/viewer.php?key=/*YOUR API KEY*/&img=/*YOUR IMG PATH*/&mo=AR"));
+		
+		//VR mode, please use mobile device testing
+		//You can use full path to load image, but make sure it fit "Cross-Origin Resource Sharing policy"
 		echo(response, httpConnect("https://darkdusk.org/vroom/api/viewer.php?key=/*YOUR API KEY*/&img=/*YOUR IMG PATH*/&mo=VR"));
 	}
 
@@ -58,8 +64,14 @@ public class VRoom extends HttpServlet {
 		}
 		// String postBodyString = stringBuffer.toString();
 
+		//basic mode with server demo image
 		echo(response, httpConnect("https://darkdusk.org/vroom/api/viewer.php?key=/*YOUR API KEY*/&img=/*YOUR IMG PATH*/"));
+		
+		//AR mode, please use mobile device testing
 		echo(response, httpConnect("https://darkdusk.org/vroom/api/viewer.php?key=/*YOUR API KEY*/&img=/*YOUR IMG PATH*/&mo=AR"));
+		
+		//VR mode, please use mobile device testing
+		//You can use full path to load image, but make sure it fit "Cross-Origin Resource Sharing policy"
 		echo(response, httpConnect("https://darkdusk.org/vroom/api/viewer.php?key=/*YOUR API KEY*/&img=/*YOUR IMG PATH*/&mo=VR"));
 	}
 
