@@ -18,9 +18,15 @@ public class Frg_Terms extends Fragment {
 		frgView = inflater.inflate(R.layout.frg_web, container, false);
 
 		initView();
-
+		
+		//basic mode with server demo image
 		webView.loadUrl("https://darkdusk.org/vroom/api/viewer.php?key=/*YOUR API KEY*/&img=/*YOUR IMG PATH*/");
+		
+		//AR mode, please use mobile device testing
 		webView.loadUrl("https://darkdusk.org/vroom/api/viewer.php?key=/*YOUR API KEY*/&img=/*YOUR IMG PATH*/&mo=AR");
+		
+		//VR mode, please use mobile device testing
+		//You can use full path to load image, but make sure it fit "Cross-Origin Resource Sharing policy"
 		webView.loadUrl("https://darkdusk.org/vroom/api/viewer.php?key=/*YOUR API KEY*/&img=/*YOUR IMG PATH*/&mo=VR");
 		
 		return frgView;
